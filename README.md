@@ -1,5 +1,5 @@
 # sentiment-service
-Java Implementation of Sentiment Service
+Java Implementation of Sentiment Service using Angular-8 and Microservices.
 
 There are 4 main components inside the sentiment-service repository.
 
