@@ -1,0 +1,27 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
+                    <div class="form-group">
+                        <div class="md-form amber-textarea active-amber-textarea">
+                         <i class="fas fa-pencil-alt prefix"></i>
+                        <textarea id="sentiText" [(ngModel)]="sentiText" name="sentiText" (input)="doCheckTypeAhead($event)" class="md-textarea form-control" rows="3"></textarea>
+                        <!--p>{{sentiText}}</p>
+                        <p>{{loadedSentiment}}</p-->
+                        <label for="sentiText">Enter a sentense ending with full stop.</label>
+                    </div> 
+        
+        <div class="row">
+                <div class="col-xs-12 col-md-6 col-md-offset-3">
+                    <button class="btn btn-primary" type="submit"> Check Sentiment </button>
+                    &nbsp;&nbsp;
+                    <button class="btn btn-primary" type="button" (click)="onClear()"> Clear </button> 
+                </div>
+             </div>
+             </div>
+        </form>
+</div>
+
+
+
